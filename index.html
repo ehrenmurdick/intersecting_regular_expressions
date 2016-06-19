@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Contract testing ruby</title>
+
+<meta name="description" content="End to end testing vs contracts">
+<meta name="author" content="Ehren Murdick">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+<link rel="stylesheet" href="css/reveal.css">
+<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+<!-- Code syntax highlighting -->
+<link rel="stylesheet" href="lib/css/zenburn.css">
+</head>
+
+<body>
+
+<div class="reveal">
+  <div class="slides">
+    <section>
+      <p>Ehren Murdick</p>
+      <p>@rubyprogrammer</p>
+      <p>github.com/ehrenmurdick</p>
+    </section>
+
+    <section>
+      <h1>Regular Expressions</h1>
+    </section>
+
+
+
+    <section>
+      <h3>Links</h3>
+      <p><a href="http://github.com/ehrenmurdick/container_talk">github.com/ehrenmurdick/container_talk</a></p>
+      <p><a href="http://github.com/ehrenmurdick/generating_generics">github.com/ehrenmurdick/generating_generics</a></p>
+    </section>
+  </div>
+</div>
+
+<style type="text/css">
+li.check:before {
+  content: "\2713";
+  margin-left: -1em;
+  margin-right: 0.5em;
+  width: 1em;
+  padding: 0;
+  color: green;
+}
+li.check {
+  list-style-type: none;
+}
+
+li.cross:before {
+  content: "\2717";
+  margin-left: -1em;
+  padding: 0;
+  width: 1em;
+  margin-right: 0.51em;
+  color: red;
+}
+li.cross {
+  list-style-type: none;
+}
+</style>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+<script>
+Reveal.initialize({
+controls: true,
+progress: true,
+history: true,
+center: true,
+
+transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+// Optional reveal.js plugins
+dependencies: [
+{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+{ src: 'plugin/zoom-js/zoom.js', async: true },
+{ src: 'plugin/notes/notes.js', async: true }
+]
+});
+
+</script>
+
+</body>
+</html>
