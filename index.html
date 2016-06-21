@@ -33,27 +33,44 @@
 
     <section>
       <h1>Regular Expressions</h1>
+      <blockquote>a sequence of characters that define a search pattern, mainly for use in pattern matching with strings, or string matching, i.e. "find and replace"-like operations<sup><a class="cite" href="#/links">n</a></sup></blockquote>
     </section>
 
     <section>
-      <h1>What are they?</h1>
+      <h4>How it works</h4>
+
+      <p>
+      "<span class="fragment highlight-red" data-fragment-index="2">f</span><span class="fragment highlight-red" data-fragment-index="3">o</span><span class="fragment highlight-red" data-fragment-index="4">o</span><span class="fragment highlight-green" data-fragment-index="5">b</span><span class="fragment highlight-green" data-fragment-index="7">a</span><span class="fragment highlight-green" data-fragment-index="9">r</span>"
+      </p>
+
+      <p>
+      /<span class="fragment highlight-blue" data-fragment-index="1">b</span><span class="fragment highlight-blue" data-fragment-index="6">.</span><span class="fragment highlight-blue" data-fragment-index="8">r</span>/
+      </p>
     </section>
 
     <section>
-      <h2>nerd snipe<sup><a href="#/links">1</a></sup></h2>
-      <p>To provide a problem so interesting and difficult that the target is compelled to cease whatever they are doing (eating, reading, walking) in order to think about it</p>
+      <h2>nerd snipe<sup><a class="cite" href="#/links">n</a></sup></h2>
+      <blockquote>To provide a problem so interesting and difficult that the target is compelled to cease whatever they are doing (eating, reading, walking) in order to think about it</blockquote>
     </section>
-
-
 
     <section id="links">
       <h3>Links</h3>
       <ol>
-        <li><cite><a href="https://www.explainxkcd.com/wiki/index.php/356:_Nerd_Sniping">explainxkcd.com</a></cite></li>
+        <li><a href="https://en.wikipedia.org/wiki/Regular_expression">wikipedia</a></li>
+        <li><a href="https://www.explainxkcd.com/wiki/index.php/356:_Nerd_Sniping">explainxkcd.com</a></li>
       </ol>
     </section>
   </div>
 </div>
+
+<script>
+(function() {
+  var elements = document.querySelectorAll(".cite");
+  for(i in elements) {
+    elements[i].textContent = parseInt(i)+1;
+  }
+})();
+</script>
 
 <style type="text/css">
 li.check:before {
@@ -64,6 +81,14 @@ li.check:before {
   padding: 0;
   color: green;
 }
+
+.reveal blockquote:before {
+  content: '\201C';
+}
+.reveal blockquote:after {
+  content: '\201D';
+}
+
 li.check {
   list-style-type: none;
 }
