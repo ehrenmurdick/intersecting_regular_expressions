@@ -37,15 +37,37 @@
     </section>
 
     <section>
-      <h4>How it works</h4>
-
+      <h4>How they work</h4>
       <p>
-      "<span class="fragment highlight-red" data-fragment-index="2">f</span><span class="fragment highlight-red" data-fragment-index="3">o</span><span class="fragment highlight-red" data-fragment-index="4">o</span><span class="fragment highlight-green" data-fragment-index="5">b</span><span class="fragment highlight-green" data-fragment-index="7">a</span><span class="fragment highlight-green" data-fragment-index="9">r</span>"
+        "<span class="fragment highlight-red" data-fragment-index="2">f</span><span class="fragment highlight-red" data-fragment-index="3">o</span><span class="fragment highlight-red" data-fragment-index="4">o</span><span class="fragment highlight-green" data-fragment-index="5">b</span><span class="fragment highlight-green" data-fragment-index="7">a</span><span class="fragment highlight-green" data-fragment-index="9">r</span>"
       </p>
-
       <p>
-      /<span class="fragment highlight-blue" data-fragment-index="1">b</span><span class="fragment highlight-blue" data-fragment-index="6">.</span><span class="fragment highlight-blue" data-fragment-index="8">r</span>/
+        /<span class="fragment highlight-blue" data-fragment-index="1">b</span><span class="fragment highlight-blue" data-fragment-index="6">.</span><span class="fragment highlight-blue" data-fragment-index="8">r</span>/
       </p>
+    </section>
+
+    <section>
+      <h4>Can you detect if two regular expressions intersect?</h4>
+    </section>
+
+    <section>
+      <table>
+        <tr>
+          <td>/a../</td>
+          <td>/.bc/</td>
+          <td class="fragment">"abc"</td>
+        </tr>
+        <tr class="fragment">
+          <td>/a../</td>
+          <td>/a+c/</td>
+          <td class="fragment">"aac"</td>
+        </tr>
+        <tr class="fragment">
+          <td>/ab{1, 2}/</td>
+          <td>/b{2, 3}c+/</td>
+          <td class="fragment">"abbc"</td>
+        </tr>
+      </table>
     </section>
 
     <section>
