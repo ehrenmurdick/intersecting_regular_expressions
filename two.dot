@@ -1,0 +1,14 @@
+digraph regex {
+  rankdir=LR;
+  node [shape="circle"];
+  /*
+    /b{2,}c+/
+  */
+
+  3 [shape="doublecircle" rank="3"];
+  0 -> 1 [label=" b "];
+  1 -> 2 [label=" b "];
+  2 -> 2 [label=" b "];
+  2 -> 3 [label=" c "];
+  3 -> 3 [label=" c "];
+}

@@ -1,0 +1,18 @@
+digraph regex {
+  node [shape="circle"];
+  rankdir=LR;
+  32 [shape="doublecircle"];
+  00 [shape="square"];
+
+  00 -> 11 [label=" b "];
+  01 -> 12 [label=" b "];
+  02 -> 13 [label=" b "];
+  10 -> 21 [label=" b "];
+  11 -> 22 [label=" b "];
+  12 -> 23 [label=" b "];
+  20 -> 21 [label=" b "];
+  21 -> 22 [label=" b "];
+  22 -> 23 [label=" b "];
+
+  22 -> 32 [label=" c "];
+}
